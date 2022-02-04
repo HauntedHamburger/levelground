@@ -1,0 +1,286 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    background-color: rgb(117, 172, 228);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/*HEADER*/
+header{
+    color: #fff;;
+    background-color: rgb(105, 124, 143);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav li a{
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    gap: 2rem;
+}
+.header__btn:hover{
+    color: #fff;
+    font-weight: 500;
+    background-color: rgb(32, 47, 61);
+    border: 1px solid rgb(32, 47, 61);
+}
+.header__btn{
+    color: slategray;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 3px;
+}
+
+header section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+}
+
+header section > * {
+    padding-bottom: 2rem;
+}
+header h1{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: snow;
+    width: 100%;
+}
+
+/* Why Section */
+
+.why{
+    color: rgb(70, 70, 70);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+}
+
+.why__box {
+    padding: 5rem 0;
+    width: 70%;
+}
+.why h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+/* Visit Section */
+
+.visit{
+    background-color: rgb(227, 231, 233);
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+}
+
+.visit__box{
+    color: rgb(70, 70, 70);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+}
+.visit__img { 
+    background-color: rgb(109, 128, 146);
+    box-shadow: 0 2px 10px rgba(41, 41, 41, 0.25);
+    height: 150px;
+    width: 100%;
+}
+
+.visit__box h4 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.25rem 0;
+}
+
+.visit__box p{
+    font-size: 1.15rem;
+    font-weight: 200;
+    padding-bottom: 1.25rem;
+}
+
+/* Volunteer Section */
+
+.volunteer{
+    color: rgb(70, 70, 70);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+}
+
+.volunteer__box {
+    width: 70%;
+}
+
+.volunteer h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.volunteer p{
+    font-size: 1.15rem;
+    font-weight: 200;
+    padding-bottom: 1.25rem;
+}
+
+.btn{
+    width: 150px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    background-color: rgb(202, 202, 202, 0.0);
+    border: 1px solid rgb(70, 70, 70);
+}
+.btn a{
+    text-decoration: none;
+    color: rgb(47, 47, 47)
+}
+.btn:hover{
+    color: #fff;
+    background-color: rgb(32, 47, 61);
+}
+
+/* Footer */
+
+footer{
+    background-color: rgb(32, 47, 61);
+    color: #fff;
+    padding: 2rem;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer__box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.footer__social {
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: .25rem;
+}
+
+.footer__social i {
+    font-size: 1.25rem;
+}
+.footer__content {
+    display: flex;
+    flex-direction: column;
+}
+.col_1_2 .footer__content ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.col_1_2 h5 {
+    letter-spacing: 0.1rem;
+    color:rgb(118, 134, 153);
+}
+
+.col_2_2 h5 {
+    font-weight: 700;
+    padding: 0.15rem 0;
+}
+
+.col_2_2 .footer__content ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15rem;
+    padding: .25rem 0;
+}
+
+.col_1_2 .footer__content > * {
+    padding: .25rem 0;
+}
+
+
+
+
+
+.footer__legal{
+    display: flex;
+    padding: .5rem 0;
+    border-top: 2px solid #fff;
+    color: #fff;
+    font-size: 12px;
+}
+
